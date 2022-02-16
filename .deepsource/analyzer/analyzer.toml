@@ -1,5 +1,5 @@
-name = "Add your macro name here."
-description = "Add your macro description here."
+name = "Python Macro"
+description = "Test Python macro"
 
 # Leave these as-is
 version = "1"
