@@ -1,0 +1,9 @@
+title = "Assignment expressions not allowed"
+weight = 80
+category = "antipattern"
+severity = "major"
+description = """
+Don't use assignment expressions.
+They lead to confusing code almost all the time.
+"""
+recommended = true

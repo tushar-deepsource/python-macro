@@ -1,0 +1,8 @@
+title = "Metaclass usage not allowed"
+weight = 80
+category = "style"
+severity = "major"
+description = """
+We don't allow using metaclasses in this codebase.
+"""
+recommended = true

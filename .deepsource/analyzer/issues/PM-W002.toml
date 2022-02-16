@@ -1,0 +1,25 @@
+title = "Comparing literals with `is`"
+weight = 80
+category = "bug-risk"
+severity = "major"
+description = """
+Don't compare literals with `is`, as they aren't guaranteed to be the same
+object everytime. Use `==` instead.
+
+## Example
+
+### Bad practice
+
+```python
+if 5 is 5:
+    print('It works!')
+```
+
+### Recommended
+
+```python
+if 5 == 5:
+    print('It works!')
+```
+"""
+recommended = true

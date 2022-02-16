@@ -1,0 +1,35 @@
+title = "Found for-else without `break` statement"
+weight = 80
+category = "bug-risk"
+severity = "major"
+description = """
+If the for-loop doesn't have a `break` statement, the `else` block will never
+execute. So either fix the code, or remove the `else` block.
+
+## Example
+
+### Bad practice
+
+```python
+def find_book(book_name):
+    for book in books:
+        if book == book_name:
+            print('Found')
+
+    else:  # Will never run.
+        print('Not found')
+```
+
+### Recommended
+
+```python
+def find_book(book_name):
+    for book in books:
+        if book == book_name:
+            print('Found')
+            break  # Add the break, so that `else` can run.
+    else:
+        print('Not found')
+```
+"""
+recommended = true
